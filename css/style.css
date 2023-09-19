@@ -1,0 +1,677 @@
+* {
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* loding */
+
+#spinnar {
+    background-color: #09c;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+    animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+    animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+    animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+    animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+    animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+    animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+    animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+    animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+    animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+    animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+    animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot {
+    80%,
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot-before {
+    50% {
+        transform: scale(0.4);
+    }
+    100%,
+    0% {
+        transform: scale(1);
+    }
+}
+
+/* end loding */
+
+/* button */
+#btnUp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 80000;
+    transition: all 0.8s;
+    /* display: none; */
+}
+/* start navbar */
+.navbar {
+    position: fixed;
+    top: 0px;
+    z-index: 15000000;
+    display: none;
+    transition: all 0.2s;
+}
+
+.navbar-nav .active,
+.navbar-nav .nav-link:hover {
+    color: #0dcaf0 !important;
+    transition: all 0.5s;
+}
+
+
+
+.navbar ul li a {
+    color: #000 !important;
+    font-size: 18px !important;
+}
+
+
+
+
+
+/* end navbar */
+
+/*====================== */
+/* ---- reset ---- */
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font:
+        normal 75% Arial,
+        Helvetica,
+        sans-serif;
+}
+canvas {
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+} /* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+} /* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+/* ==================== */
+
+/* start header */
+
+#Home {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    height: 100vh;
+}
+
+#My {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    height: 100vh;
+}
+
+#My .container .row .col-md-8 .titel h1 {
+    color: #11c4ff !important;
+    font-size: 50px !important;
+}
+#My .container .row .col-md-8 .titel p {
+    font-size: 50px !important;
+    color: #000000bc !important;
+    position: relative;
+    top: 0px;
+}
+
+#My .container .row .col-md-8 .titel p .name {
+    font-size: 80px !important;
+    color: #000000 !important;
+}
+
+#My .container .row .col-md-8 .titel .skills {
+    position: absolute;
+}
+#My .container .row .col-md-8 .titel .skills .element {
+    font-size: 30px !important;
+}
+
+/* end header */
+
+/* start about */
+.about-image {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.title h2 {
+    font-size: 65px !important;
+    color: #fff;
+    font-family: "Alegreya", serif;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya SC", serif;
+    font-family: "Amatic SC", cursive;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+.title h3 {
+    font-size: 30px;
+    color: #000;
+    font-family: "Alegreya", serif;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya SC", serif;
+    font-family: "Amatic SC", cursive;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+/* end about */
+
+/* START SKILLAs */
+
+#skills {
+    background-image: url(../img/dark_dot.jpg);
+    background-position: center center;
+    background-size: auto;
+    background-repeat: repeat;
+    position: relative;
+    top: 0px;
+}
+
+#skills .title h2{
+    font-size: 5rem !important;
+    font-family: "Alegreya", serif;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya SC", serif;
+    font-family: "Amatic SC", cursive;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
+
+}
+
+#skills .row .react .card,
+#skills .row .bootStrap .card,
+#skills .row .js .card,
+#skills .row .css .card,
+#skills .row .html .card {
+    position: relative;
+    transition: all 1s;
+}
+
+#skills .row .react .card .icon,
+#skills .row .bootStrap .card .icon,
+#skills .row .js .card .icon,
+#skills .row .css .card .icon,
+#skills .row .html .card .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 45px;
+}
+
+#skills .row .react .card .icon i,
+#skills .row .bootStrap .card .icon i,
+#skills .row .js .card .icon i,
+#skills .row .css .card .icon i,
+#skills .row .html .card .icon i {
+    padding: 15px 20px;
+    border-radius: 50px !important;
+    font-size: 50px;
+    transition: all 1s;
+}
+
+#skills .row .html .card .icon i {
+    background-color: #e34c26;
+    color: rgb(255, 255, 255);
+}
+#skills .row .css .card .icon i {
+    background-color: #09c;
+    color: rgb(255, 255, 255);
+}
+#skills .row .js .card .icon i {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+#skills .row .bootStrap .card .icon i {
+    background-color: #563d7c;
+    color: rgb(255, 255, 255);
+}
+#skills .row .react .card .icon i {
+    background-color: #61dbfb;
+    color: rgb(255, 255, 255);
+}
+
+#skills .row .react .card .card-body,
+#skills .row .bootStrap .card .card-body,
+#skills .row .js .card .card-body,
+#skills .row .css .card .card-body,
+#skills .row .html .card .card-body {
+    position: relative;
+    bottom: 20px;
+}
+
+#skills .card h3 {
+    font-family: "Alegreya", serif;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya SC", serif;
+    font-family: "Amatic SC", cursive;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+#skills .row .html .card:hover {
+    background-color: #e34c26 !important;
+    color: #fff !important;
+}
+
+#skills .row .html .card:hover .icon i {
+    background-color: rgb(255, 255, 255);
+    color: #e34c26;
+}
+
+#skills .row .css .card:hover {
+    background-color: #09c !important;
+    color: #fff !important;
+}
+
+#skills .row .css .card:hover .icon i {
+    background-color: rgb(255, 255, 255);
+    color: #09c;
+}
+
+#skills .row .js .card:hover {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+#skills .row .js .card:hover .icon i {
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+}
+
+#skills .row .bootStrap .card:hover {
+    background-color: #563d7c !important;
+    color: white !important;
+}
+
+#skills .row .bootStrap .card:hover .icon i {
+    background-color: rgb(255, 255, 255);
+    color: #563d7c;
+}
+
+#skills .row .react .card:hover {
+    background-color: #61dbfb !important;
+    color: white !important;
+}
+
+#skills .row .react .card:hover .icon i {
+    background-color: rgb(255, 255, 255);
+    color: #61dbfb;
+}
+
+
+/* end skills */
+
+/* start projects*/
+
+#projects {
+    position: relative;
+}
+
+
+#projects .container-fluid .container .row .card {
+    position: relative;
+    overflow: hidden;
+} 
+
+#projects .container-fluid .container .row .card .img{
+    position: relative;
+    overflow: hidden;
+}
+
+#projects .container-fluid .container .row .card .img img{
+    transition: all 1.5s ;
+}
+#projects .container-fluid .container .row .card .img:hover  img{
+    transform: scale(1.5);
+}
+
+
+
+#projects .btn {
+    color: black !important;
+    background-color: orange !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 1s;
+}
+
+#projects .btn:hover{
+    color: orange !important;
+    background-color: #000 !important;
+}
+
+
+#projects .gp .btn {
+    color: black !important;
+    background-color: #0dcaf0 !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 1s;
+}
+
+#projects .gp .btn:hover{
+    color: #0dcaf0 !important;
+    background-color: #000 !important;
+}
+
+
+
+
+#projects .cycle .btn {
+    color: rgb(255, 254, 254) !important;
+    background-color: #325662 !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 1s;
+}
+
+#projects .cycle .btn:hover{
+    color: #325662 !important;
+    background-color: #000 !important;
+}
+
+
+#projects .make_up .btn {
+    color: rgb(255, 254, 254) !important;
+    background-color: fuchsia !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 1s;
+}
+
+#projects .make_up .btn:hover{
+    color: fuchsia !important;
+    background-color: #000 !important;
+}
+
+
+/*  */
+
+/* end projects */
+
+#contact {
+    background-image: url(../img/dark_dot.jpg);
+    background-position: center center;
+    background-size: auto;
+    background-repeat: repeat;
+    position: relative;
+    bottom:  0px;
+}
+
+
+#contact .title h2{
+    font-size: 80px;
+    color: #fff;
+    font-family: "Alegreya", serif;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya SC", serif;
+    font-family: "Amatic SC", cursive;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+#contact .container .email,
+#contact .container .name { 
+    padding: 0px 0px !important;
+    width: 40% !important;
+    padding: 20px !important;
+}
+
+#contact .container .email input,
+#contact .container .name input{
+    padding: 15px ;
+    width: 100% !important;
+}
+
+
+#d_message,
+#d_subject,
+#d_name,
+#d_email{
+    display: none;
+    position: absolute;
+    
+}
+
+
+
+
+
+#contact .container .subject,
+#contact .container .message{
+    width: 78% !important;
+   
+}
+
+#contact .container .subject input{
+    padding: 15px;
+}
+
+#contact .container .boutton .btn{
+    background-color: #11c4ff;
+    padding: 10px 15px;
+    color: #fff;
+}
+#contact .container .boutton .btn:hover{
+    background-color: #ffffff;
+    color: #11c4ff;
+}
+
+
+/* footer */
+footer {
+    background-color: rgb(0, 153, 204);
+    height: 40vh;
+}
+
+
+footer .container .row .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container .row .social a{
+    padding:0px 15px;
+}
+
+footer .container .row .social a i{
+    background-color: rgb(0, 0, 0);
+    color: #fff !important;
+    padding: 15px 15px;
+    border-radius: 50% ;
+    font-size: 18px !important;
+    font-weight: 500;
+    transition: all 1s;
+}
+
+footer .container .row .social .git a i:hover{
+    background-color:#fff;
+    color: #000 !important;
+}
+
+footer .container .row .social .face a i:hover{
+    background-color:#fff;
+    color: blue !important;
+}
+
+footer .container .row .social .inst a i:hover{
+    background-color:#fff;
+    color: rgb(147, 21, 139) !important;
+    font-weight: 900;
+}
+
+footer .container .row .social .link a i:hover{
+    background-color:#fff;
+    color: blue !important;
+    font-weight: 900;
+}
+
+
+footer .container .row .by a:hover{
+text-decoration: underline;
+}
